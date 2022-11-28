@@ -1,2 +1,6 @@
 *.xml
-test\
+AppTest.java
+pom.xml
+workspace.xml
+AppTest.class
+App.class

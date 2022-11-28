@@ -13,6 +13,7 @@ public class App {
         int[] arrays = fillArrays();
         System.out.println(Arrays.toString(arrays));
         serchMaxMin(arrays);
+        serchMidSumm(arrays);
     }
 
     private static int randomSize() {
@@ -58,5 +59,16 @@ public class App {
         }
         System.out.println("Минимальное число равно = " + min);
         System.out.println("Максимальное число равно = " + max);
+    }
+
+    private static void serchMidSumm(int[] arr) {
+        double summ = 0;
+        for (int j : arr) {
+            summ = summ + j;
+        }
+        System.out.println("Сумма всех элементов массива = " + summ);
+        System.out.println("Длинна массива = " + arr.length);
+        System.out.println("Средняя сумма элементов массива = " + (summ/arr.length));
+
     }
 }
